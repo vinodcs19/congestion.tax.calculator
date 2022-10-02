@@ -16,8 +16,9 @@ namespace congestion_tax_calculator_net_core_test
         {
              _congestionTaxCalculator = new CongestionTaxCalculator();
         }
+
         [TestMethod]
-        public async Task Input_provided_by_my_colleagues_whic_found_on_desk()
+        public async Task Input_provided_by_my_colleagues_which_found_on_desk()
         {
             Assert.AreEqual(0, await _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 1, 14, 21, 0, 0) }));
             Assert.AreEqual(0, await _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 1, 15, 21, 0, 0) }));
@@ -36,6 +37,7 @@ namespace congestion_tax_calculator_net_core_test
             Assert.AreEqual(8, await _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 3, 26, 14, 25, 0) }));
             Assert.AreEqual(0, await _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 12, 26, 14, 07, 27) }));// public holiday
         }
+
         [TestMethod]
          public  async Task It_should_return_max_amount_8sek_between_timeinterval_6_00am_to_6_29amAsync()
         {
@@ -44,6 +46,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 6, 15, 0),
                 new DateTime(2013, 2, 1, 6, 29, 0)}));
         }
+
         [TestMethod]
          public  async Task It_should_return_max_amount_13sek_between_timeinterval_6_30am_to_6_59amAsync()
         {
@@ -52,6 +55,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 6, 45, 0),
                 new DateTime(2013, 2, 1, 6, 59, 0)}));
         }
+
         [TestMethod]
          public  async Task It_should_return_max_amount_18sek_between_timeinterval_7_00am_to_7_59amAsync()
         {
@@ -60,6 +64,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 7, 15, 0),
                 new DateTime(2013, 2, 1, 7, 59, 0)}));
         }
+
         [TestMethod]
          public  async Task It_should_return_max_amount_13sek_between_timeinterval_8_00am_to_8_29amAsync()
         {
@@ -68,6 +73,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 8, 15, 0),
                 new DateTime(2013, 2, 1, 8, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_8sek_between_timeinterval_8_30am_to_09_29am()
         {
@@ -76,6 +82,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 8, 45, 0),
                 new DateTime(2013, 2, 1, 9, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_8sek_between_timeinterval_9_30am_to_10_29am()
         {
@@ -84,6 +91,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 9, 45, 0),
                 new DateTime(2013, 2, 1, 10, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_8sek_between_timeinterval_10_30am_to_11_29am()
         {
@@ -92,6 +100,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 10, 45, 0),
                 new DateTime(2013, 2, 1, 11, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_8sek_between_timeinterval_11_30am_to_12_29am()
         {
@@ -100,6 +109,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 11, 45, 0),
                 new DateTime(2013, 2, 1, 12, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_8sek_between_timeinterval_12_30am_to_13_29am()
         {
@@ -108,6 +118,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 12, 45, 0),
                 new DateTime(2013, 2, 1, 13, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_8sek_between_timeinterval_13_30am_to_14_29am()
         {
@@ -116,6 +127,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 13, 45, 0),
                 new DateTime(2013, 2, 1, 14, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_8sek_between_timeinterval_14_30am_to_14_59am()
         {
@@ -139,6 +151,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 13, 35, 0),
                 new DateTime(2013, 2, 1, 14, 59, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_13sek_between_timeinterval_15_00am_to_15_29am()
         {
@@ -147,6 +160,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 15, 15, 0),
                 new DateTime(2013, 2, 1, 15, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_18sek_between_timeinterval_15_30am_to_16_59am()
         {
@@ -155,6 +169,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 15, 45, 0),
                 new DateTime(2013, 2, 1, 16, 30, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_36sek_between_timeinterval_15_30am_to_16_59am()
         {
@@ -164,6 +179,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 16, 30, 0),
                 new DateTime(2013, 2, 1, 16, 59, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_13sek_between_timeinterval_17_00am_to_17_59am()
         {
@@ -173,6 +189,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 17, 45, 0),
                 new DateTime(2013, 2, 1, 17, 59, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_8sek_between_timeinterval_18_00am_to_18_29am()
         {
@@ -181,6 +198,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 18, 15, 0),
                 new DateTime(2013, 2, 1, 18, 29, 0)}));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_0sek_between_timeinterval_18_30am_to_05_59am()
         {
@@ -201,6 +219,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 18, 45, 0),
                 new DateTime(2013, 2, 1, 05, 59, 0)}));
         }
+
         [TestMethod]
          public  async Task It_should_return_max_amount_13_between_timeinterval_6_00am_to_6_59amAsync()
         {
@@ -211,6 +230,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 6, 45, 0),
                 new DateTime(2013, 2, 1, 6, 59, 0) }));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_18_between_timeinterval_6am_to_7am()
         {
@@ -221,6 +241,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 6, 45, 0),
                 new DateTime(2013, 2, 1, 7, 00, 0) }));
         }
+
         [TestMethod]
          public async Task It_should_return_max_amount_31_between_timeinterval_6am_to_7_01am()
         {
@@ -245,6 +266,7 @@ namespace congestion_tax_calculator_net_core_test
                 new DateTime(2013, 2, 1, 6, 45, 0),
                  }));
         }
+
         [TestMethod]
          public async Task It_should_return_tax_amount_0sek_when_it_is_public_holiday()
         {
@@ -266,6 +288,7 @@ namespace congestion_tax_calculator_net_core_test
             Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 12, 26, 13, 30, 0) }));
             Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 12, 31, 13, 30, 0) }));
         }
+
         [TestMethod]
          public async Task It_should_return_tax_amount_0sek_day_before_public_holiday()
         {
@@ -280,14 +303,14 @@ namespace congestion_tax_calculator_net_core_test
             Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 6, 5, 15, 30, 0) }));
             Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 6, 20, 16, 30, 0) }));
             Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 7, 1, 17, 30, 0) }));
-            Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 11, 1, 18, 30, 0) }));
+            Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 11, 1, 17, 30, 0) }));
             Assert.AreEqual(0, await _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 12, 23, 13, 30, 0) }));
             Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 12, 24, 13, 30, 0) }));
             Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 12, 25, 13, 30, 0) }));
             Assert.AreEqual(0, await  _congestionTaxCalculator.GetTax(new Car(), new DateTime[] { new DateTime(2013, 12, 30, 13, 30, 0) }));
         }
         [TestMethod]
-         public async Task It_should_return_tax_amount_0sek_on_the_month_of_july()
+         public async Task It_should_return_tax_amount_0sek_in_the_month_of_july()
         {
             for (int i = 1; i <= 31; i++)
             {
