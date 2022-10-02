@@ -1,17 +1,20 @@
 ﻿<Properties StartupConfiguration="{8D552D09-15A7-4A3D-832E-931A2B36564B}|Default">
   <MonoDevelop.Ide.ItemProperties.congestion.tax.calculator.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="congestion-tax-calculator-net-core-test/CongestionTaxCalculatorTest.cs">
+  <MonoDevelop.Ide.ItemProperties.congestion-tax-calculator-net-core FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="congestion-tax-calculator-net-core/ICongestionTaxCalculator.cs">
     <Files>
-      <File FileName="congestion-tax-calculator-net-core-test/CongestionTaxCalculatorTest.cs" Line="21" Column="80" />
-      <File FileName="congestion.tax.calculator.api/Program.cs" />
+      <File FileName="congestion-tax-calculator-net-core-test/CongestionTaxCalculatorTest.cs" Line="1" Column="1" />
+      <File FileName="congestion-tax-calculator-net-core/CongestionTaxCalculator.cs" Line="1" Column="1" />
+      <File FileName="congestion-tax-calculator-net-core/ICongestionTaxCalculator.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="congestion.tax.calculator" expanded="True">
-            <Node name="congestion-tax-calculator-net-core-test" expanded="True">
-              <Node name="CongestionTaxCalculatorTest.cs" selected="True" />
+            <Node name="congestion-tax-calculator-net-core" expanded="True">
+              <Node name="ICongestionTaxCalculator.cs" selected="True" />
             </Node>
+            <Node name="congestion-tax-calculator-net-core-test" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -28,6 +31,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>../../congestion-tax-calculator-main/netcore/congestion-tax-calculator-net-core.csproj</String>
+    <String>netcore/congestion-tax-calculator-net-core.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
