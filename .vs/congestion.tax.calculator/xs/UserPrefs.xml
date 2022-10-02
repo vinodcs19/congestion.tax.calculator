@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{8D552D09-15A7-4A3D-832E-931A2B36564B}|Default">
+  <MonoDevelop.Ide.ItemProperties.congestion.tax.calculator.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="congestion-tax-calculator-net-core-test/CongestionTaxCalculatorTest.cs">
+    <Files>
+      <File FileName="congestion.tax.calculator.api/Controllers/V1/TollTaxCalculatorController.cs" Line="1" Column="1" />
+      <File FileName="congestion.tax.calculator.api/Interfaces/ITollTaxCalculatorService.cs" Line="1" Column="14" />
+      <File FileName="congestion.tax.calculator.api/Models/TollTaxRequest.cs" Line="1" Column="1" />
+      <File FileName="congestion.tax.calculator.api/Models/TollTaxResponse .cs" Line="12" Column="1" />
+      <File FileName="congestion.tax.calculator.api/Services/TollTaxCalculatorService.cs" Line="25" Column="14" />
+      <File FileName="../../congestion-tax-calculator-main/netcore/CongestionTaxCalculator.cs" Line="65" Column="80" />
+      <File FileName="congestion.tax.calculator.api.test/TollTaxCalculatorControllerTest.cs" Line="1" Column="1" />
+      <File FileName="congestion.tax.calculator.api.test/TollTaxCalculatorServiceTest.cs" Line="1" Column="1" />
+      <File FileName="../../congestion-tax-calculator-main/netcore/VehiclesType/TaxVehicle.cs" Line="16" Column="2" />
+      <File FileName="../../congestion-tax-calculator-main/netcore/VehiclesType/Vehicle.cs" Line="1" Column="1" />
+      <File FileName="../../congestion-tax-calculator-main/netcore/ICongestionTaxCalculator.cs" Line="1" Column="1" />
+      <File FileName="congestion-tax-calculator-net-core-test/CongestionTaxCalculatorTest.cs" Line="21" Column="80" />
+      <File FileName="congestion.tax.calculator.api/Program.cs" Line="10" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="congestion.tax.calculator" expanded="True">
+            <Node name="congestion.tax.calculator.api" expanded="True" />
+            <Node name="congestion-tax-calculator-net-core-test" expanded="True">
+              <Node name="CongestionTaxCalculatorTest.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="congestion.tax.calculator" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
